@@ -1,0 +1,75 @@
+<html>
+    <title>MaxiGames</title>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="Assets/mg_favicon.png">
+
+        <script src="https://kit.fontawesome.com/099ae7de0b.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+      </style>
+    </head>
+        
+
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="Assets/maxigameslogoglow.png" alt="MaxiGames Logo" draggable="false" id="maxigameslogo">
+                <ul>
+                    <li><a href="gamespage.html"><i class="fa-solid fa-gamepad fa-2xl"></i></a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-house fa-2xl"></i></a></li>
+                    <li><i class="fa-solid fa-sun fa-2xl" id="toggle"></i></li>
+                    <li><a href="#"><i class="fa-solid fa-newspaper fa-2xl"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-download fa-2xl"></i></a></li>
+                </ul>
+            </div>
+            <script>
+                var button = document.getElementById("toggle")
+                let currentTheme = localStorage.getItem("selectedTheme")
+                if (currentTheme == "light-theme") {
+                    document.body.classList.toggle(localStorage.getItem("selectedTheme"))
+                    button.className = "fa-solid fa-moon fa-2xl"
+                };
+                if (currentTheme == "dark-theme") {
+                    document.body.classList.toggle(localStorage.getItem("selectedTheme"));
+                    document.body.classList.toggle(localStorage.getItem("selectedTheme"))
+                    button.className = "fa-solid fa-sun fa-2xl"
+                };
+                
+                button.onclick = function(){
+                    let currentThemee = localStorage.getItem("selectedTheme")
+                    if (currentThemee == "light-theme") {
+                        document.body.classList.toggle("light-theme")
+                        localStorage.setItem("selectedTheme", "dark-theme")
+                        button.className = "fa-solid fa-moon fa-2xl"
+                    } else {
+                        document.body.classList.toggle("light-theme")
+                        localStorage.setItem("selectedTheme", "light-theme")
+                        button.className = "fa-solid fa-sun fa-2xl"
+                        var flashbang = new Audio("Sounds/flash.mp3")
+                        flashbang.play()
+                    };
+                }
+            </script>
+
+            <div class="content1">
+                <h1 id="changelog">Changelog</h1>
+                <h1>Beta 2.0.1</h1>
+                <h2>Released: 12/6/2024</h2>
+                <p>
+                    • Added MC 1.8.8 (via Eagler Craft)
+                    • Added Awesome Tanks 1
+                </p>
+                <h1>Version 1.9</h1>
+                <h2>Released: 10/28/2024</h2>
+                <p>• Added Changelog and Option to install new versions of MaxiGames and beta versions of MaxiGames
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="Assets/maxigameswhite.png" alt="MaxiGames Logo">
+            <p>MaxiGames 2024. Name it. You got it.</p>
+            <a target="_blank" href="https://github.com/maxplayzreal/MaxiGames_Official"><i class="fa-brands fa-github fa-2xl"></i></a>
+        </div>
+    </body>
+</html>
