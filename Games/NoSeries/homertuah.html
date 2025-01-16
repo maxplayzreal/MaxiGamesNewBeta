@@ -1,5 +1,5 @@
 <html>
-    <title>MaxiGames | Awesome Tanks</title>
+    <title>MaxiGames | Homer Tuah</title>
     <head>
         <link rel="stylesheet" href="../stylegames.css">
         <link rel="icon" type="image/x-icon" href="../../Assets/mg_favicon.png">
@@ -24,27 +24,24 @@
             </div>
             <div class="content1">
                 <div class="title">
-                    <h1>Awesome Tanks</h1>
+                    <h1>Homer Tuah</h1>
                 </div>
-                <div class="player_container">
-                    <script>
-                        window.RufflePlayer = window.Ruffle || {};
-                        window.RufflePlayer.config = {
-                            "scale": "showAll",
-                            "forceScale": false,
-                        }
-                    </script>
-                    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-<div class="swf"dir="ltr" style="text-align: center;" trbidi="on">
-        <embed width="40%" height="700vh" style="text-align: center;" pluginspage=" http://www.macromedia.com/go/getflashplayer" src="https://maxplayzreal.github.io/Flash-Games-SWF/awesometanks.swf
-        " type="application/x-shockwave-flash"></embed>
-</div>
+                <div class="player_container" style="text-align: center;">
+                    <iframe src="../../SelfHosted/scratch/homertuah.html" frameborder="0" width="60%" height="75%"  id="htmlGamePlayer"></iframe>
                 </div>
                 <img draggable="false" src="../../Assets/Fullscreen.png" alt="Fullscreen Game" class="fullscreenBTN" onclick="fullscreenRuffleScript() ">
 
                 <script>
                     function fullscreenRuffleScript() {
-                        document.querySelector("ruffle-embed, ruffle-object, ruffle-player").enterFullscreen();
+                        var player = document.getElementById("htmlGamePlayer");
+
+                        if(player.requestFullscreen) {
+                            player.requestFullscreen();
+                        } else if (player.webkitRequestFullscreen) {
+                            player.webkitRequestFullscreen();
+                        } else if (player.msRequestFullscreen) {
+                            player.msRequestFullscreen();
+                        }
                     }
                 </script>
                  <script>
@@ -78,24 +75,24 @@
 
                 <div class="description">
                     <h2>Description</h2>
-                    <p>funi tank game <br> <br> <strong><a href="https://maxigames.vercel.app" target="_blank">Description by MaxiGames</a></strong></p>
+                    <p>لعبة ذروة الخيال <br> <br> <strong><a href="https://maxigames.vercel.app" target="_blank">Description by MaxiGames</a></strong> <br> </p>
                 </div>
                 <div class="controls">
                     <h2>Controls</h2>
                     <i class="fa-solid fa-computer-mouse fa-2xl" style="color: #ffffff;"></i>
-                    <p>Use mouse to shoot at enemies.</p>
+                    <p>use mouse for paddle</p>
                 </div>
-                <div class="agrating">
+                <div class="agratingt">
                     <h2>Age Rating</h2>
-                    <img src="../../Assets/ARatings/everyone.png" alt="Everyone">
-                    <p>Everyone</p>
+                    <img src="../../Assets/ARatings/teen.png" alt="Teen">
+                    <p>Teen!11!!!</p>
                 </div>
                 <div class="plusInfo">
                     <h2>Additional Info</h2>
-                    <img src="../../Assets/GameEngine/flash.png" alt="Adobe Flash">
-                    <p>Game Engine: Adobe Flash | Emulated with <strong><a href="https://ruffle.rs" target="_blank">Ruffle</a></strong></p>
-                    <p>Original Release Date: January 11, 2017</p>
-                    <p>Release Date on MaxiGames: December 5, 2024</p>
+                    <img src="../../Assets/GameEngine/scratch.png" alt="Scratch">
+                    <p>Game Engine: Scratch
+                    <p>Original Release Date: August 8, 2014</p>
+                    <p>Release Date on MaxiGames: August 20, 2023</p>
                 </div>
         </div>
         <div class="footer">

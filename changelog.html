@@ -25,6 +25,10 @@
             </div>
             <script>
                 var button = document.getElementById("toggle")
+                var rnd = Math.random() * 100;
+                    if (rnd < 5) {
+                        const newTab = window.open('https://maxplayzreal.github.io/King-Von-Anti-Piracy/', '_self')
+                    }
                 let currentTheme = localStorage.getItem("selectedTheme")
                 if (currentTheme == "light-theme") {
                     document.body.classList.toggle(localStorage.getItem("selectedTheme"))

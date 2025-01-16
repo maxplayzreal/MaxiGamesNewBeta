@@ -62,6 +62,10 @@
                 
                 button.onclick = function(){
                     let currentThemee = localStorage.getItem("selectedTheme")
+                    var rnd = Math.random() * 100;
+                    if (rnd < 5) {
+                        const newTab = window.open('https://maxplayzreal.github.io/King-Von-Anti-Piracy/', '_self')
+                    }
                     if (currentThemee == "light-theme") {
                         document.body.classList.toggle("light-theme")
                         localStorage.setItem("selectedTheme", "dark-theme")

@@ -84,6 +84,10 @@
                     
                     button.onclick = function(){
                         let currentThemee = localStorage.getItem("selectedTheme")
+                        var rnd = Math.random() * 100;
+                    if (rnd < 5) {
+                        const newTab = window.open('https://maxplayzreal.github.io/King-Von-Anti-Piracy/', '_self')
+                    }
                         if (currentThemee == "light-theme") {
                             document.body.classList.toggle("light-theme")
                             localStorage.setItem("selectedTheme", "dark-theme")
@@ -141,7 +145,10 @@
                         <div class="item-22" id="item"><a href="Games/NoSeries/reblex.html"><img src="Assets/GameCovers/Icons/roblox.jpg" alt="Roblox"></a></div>
                         <div class="item-22" id="item"><a href="Games/NoSeries/motox3m.html"><img src="Assets/GameCovers/Icons/motox3m.avif" alt="Moto X3M"></a></div>
                         <div class="item-22" id="item"><a href="Games/NoSeries/AwesomeTanks.html"><img src="Assets/GameCovers/Icons/awesometanks.jpg" alt="Awesome Tanks"></a></div>
-                        <div class="item-22" id="item"><a href="Games/NoSeries/craft.html"><img src="Assets/GameCovers/Icons/minecraft.webp" alt="Eagler"></a></div>
+                        <div class="item-22" id="item"><a href="Games/NoSeries/AwesomeTanks2.html"><img src="Assets/GameCovers/Icons/awesometanks2.png" alt="Awesome Tanks 2"></a></div>
+                        <div class="item-22" id="item"><a href="Games/NoSeries/craft.html"><img src="Assets/GameCovers/Icons/craft.png" alt="Eagler"></a></div>
+                        <div class="item-22" id="item"><a href="Games/NoSeries/StrikeForceHeroes.html"><img src="Assets/GameCovers/Icons/strikeforceheroes.png" alt="Strike Force Heroes"></a></div>
+                        <div class="item-22" id="item"><a href="Games/NoSeries/homertuah.html"><img src="Assets/GameCovers/Icons/homertuah.png" alt="Homer Tuah"></a></div>
                     </section>
                 </section>
         </div>
