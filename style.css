@@ -128,7 +128,7 @@ border: 1px solid rgba(255, 0, 0, 1);
     justify-content: space-between;
 }
 .navbar img{
-    width: 15vh;
+    width: 20vh;
     cursor: pointer;
 }
 .navbar ul li{
