@@ -27,13 +27,17 @@
                     <h1>MC 1.8.8</h1>
                 </div>
                 <div class="player_container" style="text-align: center;">
-                    <iframe src="../../SelfHosted/craft_188/main.html" frameborder="0" width="60%" height="75%"  id="htmlGamePlayer"></iframe>
+                    <iframe src="../../SelfHosted/craft_188/EaglercraftX_1.8_u53_Offline_Signed.html" width="60%" height="75%"  id="htmlGamePlayer"></iframe>
                 </div>
+                <script>
+                    document.getElementById("htmlGamePlayer").focus()
+                </script>
                 <img draggable="false" src="../../Assets/Fullscreen.png" alt="Fullscreen Game" class="fullscreenBTN" onclick="fullscreenRuffleScript() ">
 
                 <script>
                     function fullscreenRuffleScript() {
                         var player = document.getElementById("htmlGamePlayer");
+                        document.getElementById("htmlGamePlayer").focus()
 
                         if(player.requestFullscreen) {
                             player.requestFullscreen();

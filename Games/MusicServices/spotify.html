@@ -1,0 +1,62 @@
+<html>
+    <title>MaxiGames | Spotify</title>
+    <head>
+        <link rel="stylesheet" href="../stylegames.css">
+        <link rel="icon" type="image/x-icon" href="../Assets/mg_favicon.png">
+
+        <script src="https://kit.fontawesome.com/099ae7de0b.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+      </style>
+    </head>
+        
+
+    <body>
+        <div class="banner">
+            <div class="navbar2" id="navbar_2">
+                <a href="../../index.html">
+                    <img src="../../Assets/nightcore_radio.png" alt="MaxiGames Logo" href="../../index.html" draggable="false" id="maxigameslogo">
+                </a>
+                <ul>
+                    <button id="hide_btn" >Hide Topbar</button>
+                    <li><a href="../../gamespage.html"><i class="fa-solid fa-gamepad fa-2xl"></i></a></li>
+                    <li><a href="../../index.html"><i class="fa-solid fa-house fa-2xl"></i></a></li>
+                </ul>
+            </div>
+            <script>
+                const topbar = document.querySelector('#hide_btn');
+                let toggle = 0;
+
+                topbar.addEventListener('click', hidetopbar);
+                function hidetopbar() {
+                    if (toggle == 0) {
+                        console.log("ok");
+                        
+                        toggle = 1
+                        document.getElementById("navbar_2").style.top = "-60px";
+                    document.getElementById("hide_btn").style.position = "absolute";
+                    document.getElementById("hide_btn").style.paddingBottom = "2vh"
+                    document.getElementById("hide_btn").style.paddingLeft = "85vw";
+                    document.getElementById("hide_btn").style.right = "5%";
+                    document.getElementById("hide_btn").style.height = "auto";
+                    document.getElementById("hide_btn").style.color = "white";
+                    document.getElementById("hide_btn").style.backgroundColor = "grey";
+                    } else {
+                        console.log("crazy");
+                        toggle = 0
+                        document.getElementById("navbar_2").style.top = "0px";
+                    document.getElementById("hide_btn").style.position = "static";
+                    document.getElementById("hide_btn").style.paddingBottom = "10px"
+                    document.getElementById("hide_btn").style.paddingLeft = "20px";
+                    document.getElementById("hide_btn").style.right = "0%";
+                    document.getElementById("hide_btn").style.height = "auto";
+                    document.getElementById("hide_btn").style.color = "black";
+                    document.getElementById("hide_btn").style.backgroundColor = "white";
+                    }
+                }
+            </script>
+            <div class="content2">
+                <iframe style="width: 100%; height: 100%; margin-top: 25px;" src="https://x8szfn-8080.csb.app" frameborder="0"></iframe>
+        </div>
+    </body>
+</html>

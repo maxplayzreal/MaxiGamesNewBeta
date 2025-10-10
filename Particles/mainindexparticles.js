@@ -7,7 +7,7 @@ particlesJS(
                 value: 25,
             },
             color: {
-                value: "#FF0000"
+                value: "#8400ff"
             },
             move: {
                 enable: true,
@@ -18,7 +18,7 @@ particlesJS(
             },
             line_linked: {
                 enable: true,
-                color: "#fff",
+                color: "#ff00f2",
                 width: 2.5
             }
         }
